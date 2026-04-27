@@ -5,6 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+        color: #e5e7eb;
+      }
+
+      .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background: #020617;
+        border-bottom: 1px solid #334155;
+      }
+
+      .site-title {
+        color: #38bdf8;
+      }
+
+      .site-nav a {
+        color: #e5e7eb;
+        text-decoration: none;
+        margin-left: 1.5rem;
+        transition: 0.2s;
+      }
+
+      .site-nav a:hover,
+      .site-nav .active {
+        color: #38bdf8;
+      }
+
+      /* HERO SECTION */
+      .container {
+        display: grid;
+        place-items: center;
+        min-height: calc(100vh - 80px);
+        padding: 2rem;
+      }
+
+      .card {
+        text-align: center;
+        padding: 3rem;
+        border-radius: 18px;
+        background: rgba(17, 24, 39, 0.8);
+        backdrop-filter: blur(10px);
+        border: 1px solid #334155;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        max-width: 700px;
+      }
+
+      .card h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        background: linear-gradient(90deg, #38bdf8, #818cf8);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      .tagline {
+        font-size: 1.2rem;
+        color: #9ca3af;
+        margin-bottom: 1.5rem;
+      }
+
+      .card p {
+        line-height: 1.7;
+        margin-bottom: 1rem;
+      }
+
+      .buttons {
+        margin-top: 1.5rem;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 0.7rem 1.3rem;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0.5rem;
+        transition: 0.2s;
+      }
+
+      .primary {
+        background: #38bdf8;
+        color: #020617;
+      }
+
+      .primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4);
+      }
+
+      .secondary {
+        border: 1px solid #38bdf8;
+        color: #38bdf8;
+      }
+
+      .secondary:hover {
+        background: #38bdf8;
+        color: #020617;
+      }
+    </style>
   </head>
 
   <body>
@@ -19,15 +125,24 @@
 
     <div class="container">
       <main class="card">
-        <h1>Welcome Home!</h1>
-        <p>
-          This is your Home page. It gives visitors a quick introduction to your
-          project and guides them to learn more.
+        <h1>Welcome Home 🚀</h1>
+        <p class="tagline">
+          Learn, build, and grow your skills — all in one place.
         </p>
+
         <p>
-          Use the navigation above to visit the About and Contact pages.
+          This is your starting point. Explore what this project offers, discover
+          new ideas, and take your next step forward.
         </p>
-        <a class="btn" href="about.html">Learn More</a>
+
+        <p>
+          Use the navigation above or jump right in below.
+        </p>
+
+        <div class="buttons">
+          <a class="btn primary" href="about.html">Get Started</a>
+          <a class="btn secondary" href="contact.html">Contact Us</a>
+        </div>
       </main>
     </div>
   </body>
